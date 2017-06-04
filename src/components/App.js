@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { parseString } from 'xml2js';
 import { defaultUrl } from '../settings';
+import fs from 'fs';
 
 import NugetService from '../NugetService';
 import FeedSource from './FeedSource';
@@ -29,6 +30,7 @@ class App extends Component {
   }
 
   loadRepoData(feedUrl){
+    
     NugetService(feedUrl, (data)=>{
       //convert the xml into JSON
       parseString(data, (err, result) =>{

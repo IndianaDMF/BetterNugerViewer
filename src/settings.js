@@ -1,3 +1,3 @@
 export function defaultUrl() {
-	return 'http://feedserver/Nuget/nuget/Packages';
+	return 'http://dev-tfs-01.v.dom/Nuget/nuget/Packages';
 }
